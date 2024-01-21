@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap er Bank</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <h3 class="header-title">Baap er Bank e Welcome</h3>
+    <div class="board">
+        <div class="notice">Notice</div>
+        <marquee class="marquee">এটা হচ্ছে বাপের ব্যাংক। এখানে টাকা জমাতে কোনো টাকা লাগে না।😍</marquee>
+    </div>
+    <section class="container">
+        <!-- total Balance -->
+        <div class="total-container total-balance">
+            <h4 class="title">Total Balance</h4>
+            <p id="total-balance" class="balance">800</p>
+        </div>
+        <!-- total Deposit -->
+        <div class="total-container total-deposit">
+            <h4 class="title">Total Deposit</h4>
+            <p id="total-deposit" class="balance">600</p>
+        </div>
+        <!-- total Withdraw -->
+        <div class="total-container total-withdraw">
+            <h4 class="title">Total Withdraw</h4>
+            <p id="total-withdraw" class="balance">500</p>
+        </div>
+    </section>
+    <section class="container">
+        <!-- total Balance -->
+        <div class="total-container total-deposit">
+            <h4 class="title">Add Deposit</h4>
+            <input type="text" oninput="validateAndToggleBox(this)" class="input" id="deposit"
+                placeholder="type amount">
+            <button id="deposit-btn" class="btn ">Deposit Now</button>
+        </div>
+        <!-- total Withdraw -->
+        <div class="total-container total-withdraw">
+            <h4 class="title">Withdraw Money</h4>
+            <input type="text" oninput="validateAndToggleBox(this)" class="input" id="withdraw"
+                placeholder="type amount">
+            <button id="withdraw-btn" class="btn ">Withdraw Now</button>
+        </div>
+    </section>
+    <section>
+        <div class="error hide" id="error"></div>
+    </section>
+
+    <script src="./js/utilities.js"></script>
+    <script src="./js/Main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+@media only screen and (max-width : 374px) {
+    body {
+        background-color: rgb(1, 1, 28);
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .total-container {
+        width: 270px;
+    }
+
+    .header-title {
+        color: rgb(230, 246, 6);
+        font-size: 32px;
+        font-weight: bold;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 375px) and (max-width : 480px) {
+    body {
+        background-color: rgb(1, 1, 28);
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .total-container {
+        width: 320px;
+    }
+
+    .header-title {
+        color: rgb(230, 246, 6);
+        font-size: 32px;
+        font-weight: bold;
+    }
+}
+
